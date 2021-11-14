@@ -10,7 +10,7 @@ on:
 
 jobs:
   repo-sync:
-    if: ${{ github.repository != 'RayWangQvQ/BiliBiliTool' }}
+    if: ${{ github.repository != 'pwj0528/BiliBiliTool' }}
 
     runs-on: ubuntu-latest
     steps:  
@@ -21,7 +21,7 @@ jobs:
       - name: repo-sync
         uses: repo-sync/github-sync@v2
         with:
-          source_repo: "https://github.com/RayWangQvQ/BiliBiliTool.git"
+          source_repo: "https://github.com/pwj0528/BiliBiliTool.git"
           source_branch: "main"
           destination_branch: "main"
           sync_tags: "true"
